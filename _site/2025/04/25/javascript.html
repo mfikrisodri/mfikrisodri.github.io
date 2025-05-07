@@ -66,14 +66,19 @@
         }
 
         .image {
-         width: 100%;
-         max-width: 400px;
-         height: auto;
-         border-radius: 10px;
-         margin: 25px auto;
-         display: block;
-         box-shadow: 0 0 10px #00ffff44;
-      }
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin: 25px auto;
+            display: block;
+            box-shadow: 0 0 10px #00ffff44;
+        }
+
+        /* Opsional: menyembunyikan elemen kiri jika masih ada */
+        .left-title {
+            display: none;
+        }
 
         @media (max-width: 768px) {
             header h1 {
