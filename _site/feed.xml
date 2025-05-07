@@ -1,3 +1,1005 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-25T15:26:47+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">HTML Link dan Lists</title><link href="http://localhost:4000/2025/03/21/link-dan-list.html" rel="alternate" type="text/html" title="HTML Link dan Lists" /><published>2025-03-21T00:00:00+07:00</published><updated>2025-03-21T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/21/link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/21/link-dan-list.html"><![CDATA[<p>Penjelasan tentang Link dan Lists pada HTML.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-07T16:38:47+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Javascript</title><link href="http://localhost:4000/2025/04/25/javascript.html" rel="alternate" type="text/html" title="Javascript" /><published>2025-04-25T00:00:00+07:00</published><updated>2025-04-25T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/25/javascript</id><content type="html" xml:base="http://localhost:4000/2025/04/25/javascript.html"><![CDATA[<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<p><img src="/assets/images/boruto.jpg" alt="HTML Link dan Lists" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Link dan Lists pada HTML.]]></summary></entry></feed>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0d1117;
+            color: #e6f1ff;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            background-color: #0d1117;
+            box-shadow: 0 0 10px #00ffff33;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00ffff11;
+            box-shadow: 0 0 10px #00ffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff88;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #161b22;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #00ffff33;
+        }
+
+        h2 {
+            color: #00ffff;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 5px #00ffffaa;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 16px;
+            color: #c9d1d9;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 25px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+            color: #e6f1ff;
+        }
+
+        strong {
+            color: #00ffff;
+        }
+
+        .image {
+         width: 100%;
+         max-width: 400px;
+         height: auto;
+         border-radius: 10px;
+         margin: 25px auto;
+         display: block;
+         box-shadow: 0 0 10px #00ffff44;
+      }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/friends.html">Friends</a>
+        <a href="/blog.html">Blog</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>JavaScript</h1>
+    </header>
+
+    <!-- Konten -->
+    <section class="content">
+        <h2>Penjelasan JavaScript</h2>
+        <p>
+            JavaScript adalah bahasa pemrograman yang digunakan di hampir semua situs web modern.
+            Ia memungkinkan pengembang untuk membuat halaman web yang tidak hanya statis, tetapi juga dapat merespon aksi pengguna secara real-time.
+            Bersama HTML dan CSS, JavaScript membentuk "tiga pilar" utama dalam pengembangan antarmuka web.
+        </p>
+        <p>
+            JavaScript pertama kali dikembangkan oleh Netscape dan kini telah menjadi standar industri yang didukung oleh semua browser modern.
+            JavaScript berjalan di sisi klien (browser) dan memungkinkan halaman web berinteraksi secara langsung dengan pengguna tanpa harus selalu mengirim data ke server.
+        </p>
+
+        <h2>Fungsi dan Kegunaan JavaScript</h2>
+        <ul>
+            <li><strong>Manipulasi Elemen HTML (DOM):</strong> Bisa menambah, menghapus, atau mengubah konten dan struktur HTML secara langsung di browser.</li>
+            <li><strong>Menangani Interaksi Pengguna (Event Handling):</strong> Merespons aksi seperti klik, hover, scroll, atau input pengguna.</li>
+            <li><strong>Validasi Formulir:</strong> Mengecek input pengguna sebelum data dikirim ke server, seperti mengecek email sudah diisi atau belum.</li>
+            <li><strong>Menampilkan dan Menyembunyikan Konten:</strong> Bisa membuat popup, menu dropdown, tab, dan lainnya yang muncul saat dibutuhkan.</li>
+            <li><strong>Mengambil Data dari Server (AJAX/Fetch):</strong> Mengambil atau mengirim data tanpa perlu me-*reload* halaman, contohnya menampilkan produk dari database langsung di halaman.</li>
+            <li><strong>Membuat Efek Interaktif dan Animasi Ringan:</strong> Seperti slideshow gambar, highlight saat mouse diarahkan, dan animasi saat konten muncul.</li>
+        </ul>
+
+        <img src="/assets/images/javascript.jpg" alt="JavaScript" class="image" />
+    </section>
+
+</body>
+</html>]]></content><author><name></name></author><summary type="html"><![CDATA[JavaScript]]></summary></entry><entry><title type="html">Sass Dan Scss</title><link href="http://localhost:4000/2025/04/21/sass-dan-scss.html" rel="alternate" type="text/html" title="Sass Dan Scss" /><published>2025-04-21T00:00:00+07:00</published><updated>2025-04-21T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/21/sass-dan-scss</id><content type="html" xml:base="http://localhost:4000/2025/04/21/sass-dan-scss.html"><![CDATA[<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sass dan SCSS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6f1ff;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      background-color: #0d1117;
+      box-shadow: 0 0 10px #00ffff33;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 30px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00ffff11;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #161b22;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffff33;
+    }
+
+    h2, h3, h4 {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffffaa;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin: 25px 0 10px;
+    }
+
+    h4 {
+      font-size: 1.2em;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 16px;
+      color: #c9d1d9;
+    }
+
+    ul, ol {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      color: #e6f1ff;
+    }
+
+    strong {
+      color: #00ffff;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffff44;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/friends.html">Friends</a>
+    <a href="/blog.html">Blog</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Sass dan SCSS</h1>
+  </header>
+
+  <!-- Konten -->
+  <section class="content">
+    <h2>Penjelasan Sass dan SCSS</h2>
+    <p>
+      Sass (Syntactically Awesome Stylesheets) adalah <em>preprocessor</em> CSS yang membantu menulis kode CSS dengan lebih efisien, terstruktur, dan mudah dipelihara. Sass memungkinkan penggunaan fitur seperti variabel, <em>nesting</em>, <em>mixin</em>, dan lainnya—yang tidak tersedia di CSS biasa.
+    </p>
+    <p>
+      SCSS (Sassy CSS) adalah salah satu dari dua sintaks yang digunakan di Sass, dan bentuknya sangat mirip dengan CSS konvensional. Sintaks SCSS lebih umum digunakan karena kompatibel dengan file <code>.css</code>.
+    </p>
+
+    <h3>Perbedaan Sass dan SCSS</h3>
+    <ul>
+      <li><strong>Sass (Indentation syntax):</strong> Tidak menggunakan tanda kurung kurawal <code>{}</code> dan titik koma <code>;</code>, lebih mirip bahasa pemrograman Python. Ekstensi file: <code>.sass</code></li>
+      <li><strong>SCSS (Sassy CSS):</strong> Menggunakan tanda kurung kurawal dan titik koma seperti CSS biasa. Ekstensi file: <code>.scss</code></li>
+    </ul>
+
+    <h3>Fungsi Utama Sass/SCSS</h3>
+    <ul>
+      <li><strong>Menggunakan Variabel:</strong> Dapat menyimpan nilai seperti warna, font, ukuran ke dalam variabel.</li>
+      <li><strong>Nesting (Penulisan Bersarang):</strong> Menulis selector di dalam selector lain seperti struktur HTML.</li>
+      <li><strong>Partials dan Import:</strong> Memecah file menjadi bagian-bagian kecil, lalu digabung kembali saat dikompilasi.</li>
+      <li><strong>Mixin dan Function:</strong> Menyimpan blok kode yang bisa digunakan ulang dengan parameter.</li>
+      <li><strong>Inheritance (Pewarisan):</strong> Menggunakan <code>@extend</code> untuk mewarisi properti dari selector lain.</li>
+      <li><strong>Operasi Matematika dan Logika:</strong> Mendukung perhitungan langsung di dalam CSS (misalnya <code>width: 100% / 3;</code>).</li>
+    </ul>
+
+    <img src="/assets/images/sass-dan-scss.jpg" alt="Sass dan SCSS" class="image" />
+  </section>
+
+</body>
+</html>]]></content><author><name></name></author><summary type="html"><![CDATA[Sass dan SCSS]]></summary></entry><entry><title type="html">Link Dan List</title><link href="http://localhost:4000/2025/03/21/link-dan-list.html" rel="alternate" type="text/html" title="Link Dan List" /><published>2025-03-21T00:00:00+07:00</published><updated>2025-03-21T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/21/link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/21/link-dan-list.html"><![CDATA[<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Link dan Lists</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6f1ff;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      background-color: #0d1117;
+      box-shadow: 0 0 10px #00ffff33;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 30px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00ffff11;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 20px; /* Tambahkan padding-top ekstra karena nav di-fixed */
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #161b22;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffff33;
+    }
+
+    h2 {
+      color: #00ffff;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #00ffffaa;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 16px;
+      color: #c9d1d9;
+    }
+
+    ul, ol {
+      padding-left: 25px;
+      margin-bottom: 16px;
+    }
+
+    ul li, ol li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      color: #e6f1ff;
+    }
+
+    strong {
+      color: #00ffff;
+    }
+
+    code {
+      background-color: #0d1117;
+      color: #00ffff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      margin: 25px auto;
+      display: block;
+      box-shadow: 0 0 10px #00ffff44;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar di paling atas -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/friends.html">Friends</a>
+    <a href="/blog.html">Blog</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>HTML Link dan Lists</h1>
+  </header>
+
+  <!-- Konten -->
+  <section class="content">
+    <h2>Apa Itu HTML Link?</h2>
+    <p>HTML Link atau tautan adalah fitur yang digunakan untuk menghubungkan satu halaman web ke halaman lainnya atau ke sumber eksternal seperti gambar, dokumen, atau situs lain.</p>
+
+    <h3>Kegunaan HTML Link:</h3>
+    <ul>
+      <li>Membuat navigasi antar halaman dalam satu situs web.</li>
+      <li>Mengarahkan pengguna ke halaman atau situs lain (eksternal).</li>
+      <li>Membuka file atau media tertentu seperti PDF, gambar, atau video.</li>
+      <li>Membuat tautan yang menjalankan fungsi tertentu, seperti mengirim email atau menelepon.</li>
+      <li>Membuat navigasi dalam satu halaman dengan anchor link (<code>#bagian</code>).</li>
+    </ul>
+
+    <h2>Apa Itu HTML Lists?</h2>
+    <p>HTML List digunakan untuk menampilkan data dalam bentuk daftar. Ini berguna untuk menyusun informasi secara terstruktur dan mudah dibaca.</p>
+
+    <h3>Jenis-jenis List dalam HTML:</h3>
+    <ul>
+      <li><strong>Unordered List (<code>&lt;ul&gt;</code>)</strong><br />Digunakan untuk daftar yang tidak membutuhkan urutan. Biasanya tampil dengan bullet (•).</li>
+      <li><strong>Ordered List (<code>&lt;ol&gt;</code>)</strong><br />Cocok untuk data yang memiliki urutan atau langkah-langkah tertentu. Tampil dengan angka (1, 2, 3, ...).</li>
+      <li><strong>Description List (<code>&lt;dl&gt;</code>)</strong><br />Digunakan untuk menampilkan daftar istilah beserta penjelasannya.</li>
+    </ul>
+
+    <h2>Gambar Terkait:</h2>
+    <a href="/assets/images/html.jpg" target="_blank">
+      <img src="/assets/images/html.jpg" alt="Link HTML" class="image" />
+    </a>
+    <a href="/assets/images/list.jpg" target="_blank">
+      <img src="/assets/images/list.jpg" alt="List HTML" class="image" />
+    </a>
+  </section>
+
+</body>
+</html>]]></content><author><name></name></author><summary type="html"><![CDATA[HTML Link dan Lists]]></summary></entry><entry><title type="html">Git</title><link href="http://localhost:4000/2025/03/21/git.html" rel="alternate" type="text/html" title="Git" /><published>2025-03-21T00:00:00+07:00</published><updated>2025-03-21T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/21/git</id><content type="html" xml:base="http://localhost:4000/2025/03/21/git.html"><![CDATA[<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6f1ff;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      background-color: #0d1117;
+      box-shadow: 0 0 10px #00ffff33;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 30px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00ffff11;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #161b22;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffff33;
+    }
+
+    h2, h3 {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffffaa;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin: 25px 0 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 16px;
+      color: #c9d1d9;
+    }
+
+    ul {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      color: #e6f1ff;
+    }
+
+    strong {
+      color: #00ffff;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffff44;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/friends.html">Friends</a>
+    <a href="/blog.html">Blog</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Git</h1>
+  </header>
+
+  <!-- Konten -->
+  <section class="content">
+    <h2>Penjelasan Git</h2>
+    <p>
+      Git adalah sistem kontrol versi (<em>version control system</em>) yang digunakan untuk mencatat perubahan pada file dan mengelola proyek pengembangan perangkat lunak secara kolaboratif. Git sangat populer di kalangan developer karena kecepatan, fleksibilitas, dan kemampuannya untuk bekerja secara terdistribusi.
+    </p>
+    <p>
+      Git diciptakan oleh <strong>Linus Torvalds</strong> (pencipta Linux) pada tahun 2005 untuk mengelola pengembangan kernel Linux.
+    </p>
+
+    <h3>Fungsi Utama Git</h3>
+    <ul>
+      <li><strong>Mencatat Riwayat Perubahan:</strong> Git menyimpan semua versi file, memungkinkan kita untuk menelusuri perubahan dari waktu ke waktu.</li>
+      <li><strong>Kolaborasi Tim:</strong> Banyak pengembang bisa bekerja di proyek yang sama tanpa saling menimpa perubahan.</li>
+      <li><strong>Branching dan Merging:</strong> Memungkinkan pembuatan <em>branch</em> untuk fitur baru, lalu digabung kembali ke branch utama setelah selesai.</li>
+      <li><strong>Manajemen Versi Lokal dan Remote:</strong> Bisa bekerja secara lokal tanpa koneksi internet, dan disinkronkan ke remote repository seperti GitHub, GitLab, atau Bitbucket.</li>
+      <li><strong>Pemulihan File dan Revisi:</strong> Dapat membatalkan perubahan atau mengembalikan proyek ke versi sebelumnya.</li>
+      <li><strong>Audit dan Akuntabilitas:</strong> Setiap commit mencatat siapa yang membuat perubahan dan kapan, berguna untuk audit dan pelacakan.</li>
+    </ul>
+
+    <img src="/assets/images/git.jpg" alt="Git" class="image" />
+  </section>
+
+</body>
+</html>]]></content><author><name></name></author><summary type="html"><![CDATA[Git]]></summary></entry><entry><title type="html">Markdown</title><link href="http://localhost:4000/2025/03/14/markdown.html" rel="alternate" type="text/html" title="Markdown" /><published>2025-03-14T00:00:00+07:00</published><updated>2025-03-14T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/14/markdown</id><content type="html" xml:base="http://localhost:4000/2025/03/14/markdown.html"><![CDATA[<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markdown</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6f1ff;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      background-color: #0d1117;
+      box-shadow: 0 0 10px #00ffff33;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 30px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00ffff11;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #161b22;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffff33;
+    }
+
+    h2, h3 {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffffaa;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin: 25px 0 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 16px;
+      color: #c9d1d9;
+    }
+
+    ul, ol {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      color: #e6f1ff;
+    }
+
+    strong {
+      color: #00ffff;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffff44;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/friends.html">Friends</a>
+    <a href="/blog.html">Blog</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Markdown</h1>
+  </header>
+
+  <!-- Konten -->
+  <section class="content">
+    <h2>Penjelasan Markdown</h2>
+    <p>
+      Markdown (MD) adalah bahasa markup ringan yang digunakan untuk memformat teks dengan cara yang sederhana dan mudah dibaca. Markdown memungkinkan penulisan teks terstruktur tanpa memerlukan alat pengolah kata yang rumit. Banyak digunakan untuk dokumentasi, blog, dan README file pada proyek perangkat lunak.
+    </p>
+    <p>
+      Markdown pertama kali diciptakan oleh <strong>John Gruber</strong> pada tahun 2004 untuk mempermudah penulisan dokumen yang dapat dipublikasikan secara online dengan format HTML.
+    </p>
+
+    <h3>Fungsi Utama Markdown</h3>
+    <ol>
+      <li><strong>Format Teks yang Sederhana:</strong> Markdown memungkinkan penulis untuk memberikan struktur pada teks tanpa perlu menggunakan HTML atau alat pengolah kata kompleks.</li>
+      <li><strong>Mudah Dibaca:</strong> Teks yang diformat dengan Markdown tetap mudah dibaca, bahkan tanpa diproses. Ini membuatnya ideal untuk menulis dokumentasi atau blog.</li>
+      <li><strong>Konversi ke HTML:</strong> Markdown dapat dengan mudah dikonversi ke HTML menggunakan alat atau layanan tertentu, menjadikannya ideal untuk digunakan di platform blog dan situs web.</li>
+      <li><strong>Kompatibilitas dengan Sistem Kontrol Versi:</strong> Markdown sangat populer di kalangan pengembang karena mudah dibaca dan dikelola dalam sistem kontrol versi seperti Git.</li>
+      <li><strong>Penggunaan di Berbagai Platform:</strong> Markdown didukung oleh banyak platform seperti GitHub, Reddit, dan berbagai platform blog, memudahkan kolaborasi dan berbagi konten.</li>
+    </ol>
+
+    <img src="/assets/images/markdown.jpg" alt="Markdown" class="image" />
+  </section>
+
+</body>
+</html>]]></content><author><name></name></author><summary type="html"><![CDATA[Markdown]]></summary></entry><entry><title type="html">Ruby Dan Jekyl</title><link href="http://localhost:4000/2025/03/14/ruby-dan-jekyl.html" rel="alternate" type="text/html" title="Ruby Dan Jekyl" /><published>2025-03-14T00:00:00+07:00</published><updated>2025-03-14T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/14/ruby-dan-jekyl</id><content type="html" xml:base="http://localhost:4000/2025/03/14/ruby-dan-jekyl.html"><![CDATA[<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruby dan Jekyll</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6f1ff;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      background-color: #0d1117;
+      box-shadow: 0 0 10px #00ffff33;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 30px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00ffff11;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #161b22;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffff33;
+    }
+
+    h2, h3, h4 {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffffaa;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      margin: 25px 0 10px;
+    }
+
+    h4 {
+      font-size: 1.2em;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 16px;
+      color: #c9d1d9;
+    }
+
+    ul {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      color: #e6f1ff;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffff44;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/friends.html">Friends</a>
+    <a href="/blog.html">Blog</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Ruby dan Jekyll</h1>
+  </header>
+
+  <!-- Content -->
+  <section class="content">
+    <h2>Penjelasan Ruby dan Jekyll</h2>
+
+    <h3>Apa itu Ruby?</h3>
+    <p>Ruby adalah bahasa pemrograman dinamis dan berorientasi objek yang terkenal karena sintaksnya yang bersih dan mudah dibaca. Ruby sangat populer di kalangan pengembang web karena framework-nya seperti Ruby on Rails, dan juga karena menjadi dasar dari Jekyll.</p>
+
+    <h4>Fungsi Utama Ruby</h4>
+    <ul>
+      <li><strong>Pengembangan Web:</strong> Digunakan dalam framework Ruby on Rails untuk membangun aplikasi web.</li>
+      <li><strong>Skrip Otomatisasi:</strong> Cocok untuk membuat skrip guna mempermudah tugas-tugas berulang.</li>
+      <li><strong>Aplikasi CLI:</strong> Bisa digunakan untuk membuat aplikasi berbasis command line.</li>
+      <li><strong>Prototyping Cepat:</strong> Sintaks yang sederhana mempercepat pembuatan prototipe aplikasi.</li>
+      <li><strong>Sistem Paket (Gem):</strong> Ruby menggunakan "gem" untuk manajemen pustaka dan ekstensi.</li>
+    </ul>
+
+    <h3>Apa itu Jekyll?</h3>
+    <p>Jekyll adalah static site generator berbasis Ruby yang digunakan untuk membuat website statis seperti blog atau dokumentasi. Jekyll cocok untuk pengembang yang ingin membangun situs tanpa database dan backend.</p>
+
+    <h4>Fungsi Utama Jekyll</h4>
+    <ul>
+      <li><strong>Membangun Website Statis:</strong> Mengubah file Markdown menjadi HTML secara otomatis.</li>
+      <li><strong>Blogging Tanpa CMS:</strong> Menulis postingan cukup dengan file <code>.md</code>, tanpa panel admin.</li>
+      <li><strong>Integrasi GitHub Pages:</strong> Bisa langsung di-host di GitHub Pages tanpa konfigurasi tambahan.</li>
+      <li><strong>Layout dan Template:</strong> Memungkinkan penggunaan layout yang konsisten antar halaman.</li>
+      <li><strong>Konfigurasi Sederhana:</strong> Menggunakan file <code>_config.yml</code> untuk mengatur isi dan struktur situs.</li>
+    </ul>
+
+    <h3>Gambar Terkait</h3>
+    <a href="/assets/images/ruby.jpg" target="_blank">
+    <img src="/assets/images/ruby.jpg" alt="Ruby" class="image" />
+   </a>
+    <a href="/assets/images/jekyll.jpg" target="_blank">
+    <img src="/assets/images/jekyll.jpg" alt="Jekyll" class="image" />
+   </a>
+  </section>
+
+</body>
+</html>]]></content><author><name></name></author><summary type="html"><![CDATA[Ruby dan Jekyll]]></summary></entry></feed>

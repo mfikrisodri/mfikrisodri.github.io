@@ -1,3 +1,3 @@
 function myFunction() {
-alert("janganlah");
+alert("Sudah kubilang jangan di klik😡");
 }

@@ -1,0 +1,109 @@
+/* Reset dan Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(ellipse at center, #0f0f0f 0%, #000000 100%);
+    color: #e0f7fa;
+    padding: 40px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Container Umum */
+.container {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(0, 255, 255, 0.02));
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1),
+                0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.container:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.25),
+                0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18ffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 6px #00ffff;
+    padding-bottom: 4px;
+}
+
+
+
+/* Paragraf */
+p {
+    line-height: 1.8;
+    text-align: justify;
+    color: #cfd8dc;
+}
+
+/* Subjudul Section */
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #18ffff;
+    margin-bottom: 15px;
+    text-shadow: 0 0 6px #00ffff;
+    padding-bottom: 4px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 150, 136, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.05);
+}
+
+table td {
+    padding: 14px 18px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    color: #e0f7fa;
+    backdrop-filter: blur(10px);
+}
+
+table td:first-child {
+    font-weight: bold;
+    background: rgba(0, 255, 255, 0.08);
+    color: #80deea;
+    width: 35%;
+}
+
+/* Tombol */
+button {
+    background: linear-gradient(135deg, rgba(0,255,255,0.2), rgba(0,255,255,0.05));
+    color: #00e5ff;
+    border: 1px solid #00e5ff;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 25px;
+    text-shadow: 0 0 4px #00e5ff;
+    box-shadow: 0 0 8px rgba(0,255,255,0.3);
+}
+
+button:hover {
+    background: rgba(29, 240, 255, 0.29);
+    box-shadow: 0 0 15px #00e5ff, 0 0 30px #00e5ff40;
+    transform: scale(1.08);
+}

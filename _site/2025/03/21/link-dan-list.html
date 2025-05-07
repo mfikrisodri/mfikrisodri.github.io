@@ -1,56 +1,174 @@
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Link dan Lists</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Link dan Lists</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- javascript -->
-     <script src="/assets/js/scripts.js"></script>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e6f1ff;
+      line-height: 1.6;
+    }
 
-    <!-- plugins -->
-     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
-     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>HTML Link dan Lists</title>
-<meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="HTML Link dan Lists" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Penjelasan tentang Link dan Lists pada HTML." />
-<meta property="og:description" content="Penjelasan tentang Link dan Lists pada HTML." />
-<link rel="canonical" href="http://localhost:4000/2025/03/21/link-dan-list.html" />
-<meta property="og:url" content="http://localhost:4000/2025/03/21/link-dan-list.html" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-03-21T00:00:00+07:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="HTML Link dan Lists" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-21T00:00:00+07:00","datePublished":"2025-03-21T00:00:00+07:00","description":"Penjelasan tentang Link dan Lists pada HTML.","headline":"HTML Link dan Lists","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/03/21/link-dan-list.html"},"url":"http://localhost:4000/2025/03/21/link-dan-list.html"}</script>
-<!-- End Jekyll SEO tag -->
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      background-color: #0d1117;
+      box-shadow: 0 0 10px #00ffff33;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
 
-      
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 30px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00ffff11;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 20px; /* Tambahkan padding-top ekstra karena nav di-fixed */
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #161b22;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffff33;
+    }
+
+    h2 {
+      color: #00ffff;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #00ffffaa;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 16px;
+      color: #c9d1d9;
+    }
+
+    ul, ol {
+      padding-left: 25px;
+      margin-bottom: 16px;
+    }
+
+    ul li, ol li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      color: #e6f1ff;
+    }
+
+    strong {
+      color: #00ffff;
+    }
+
+    code {
+      background-color: #0d1117;
+      color: #00ffff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      margin: 25px auto;
+      display: block;
+      box-shadow: 0 0 10px #00ffff44;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-    
-    <a href="/">
-        Home
-    </a>
-    
-    <a href="/friends.html">
-        Friends
-    </a>
-    
-    <a href="/blog.html">
-        Blog
-    </a>
-    
-</nav>
- 
-    <h1>HTML Link dan Lists</h1>
-<p>21 Mar 2025</p>
-<p>Penjelasan tentang Link dan Lists pada HTML.</p>
 
-<p><img src="/assets/images/boruto.jpg" alt="HTML Link dan Lists" /></p>
+  <!-- Navbar di paling atas -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/friends.html">Friends</a>
+    <a href="/blog.html">Blog</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>HTML Link dan Lists</h1>
+  </header>
+
+  <!-- Konten -->
+  <section class="content">
+    <h2>Apa Itu HTML Link?</h2>
+    <p>HTML Link atau tautan adalah fitur yang digunakan untuk menghubungkan satu halaman web ke halaman lainnya atau ke sumber eksternal seperti gambar, dokumen, atau situs lain.</p>
+
+    <h3>Kegunaan HTML Link:</h3>
+    <ul>
+      <li>Membuat navigasi antar halaman dalam satu situs web.</li>
+      <li>Mengarahkan pengguna ke halaman atau situs lain (eksternal).</li>
+      <li>Membuka file atau media tertentu seperti PDF, gambar, atau video.</li>
+      <li>Membuat tautan yang menjalankan fungsi tertentu, seperti mengirim email atau menelepon.</li>
+      <li>Membuat navigasi dalam satu halaman dengan anchor link (<code>#bagian</code>).</li>
+    </ul>
+
+    <h2>Apa Itu HTML Lists?</h2>
+    <p>HTML List digunakan untuk menampilkan data dalam bentuk daftar. Ini berguna untuk menyusun informasi secara terstruktur dan mudah dibaca.</p>
+
+    <h3>Jenis-jenis List dalam HTML:</h3>
+    <ul>
+      <li><strong>Unordered List (<code>&lt;ul&gt;</code>)</strong><br />Digunakan untuk daftar yang tidak membutuhkan urutan. Biasanya tampil dengan bullet (•).</li>
+      <li><strong>Ordered List (<code>&lt;ol&gt;</code>)</strong><br />Cocok untuk data yang memiliki urutan atau langkah-langkah tertentu. Tampil dengan angka (1, 2, 3, ...).</li>
+      <li><strong>Description List (<code>&lt;dl&gt;</code>)</strong><br />Digunakan untuk menampilkan daftar istilah beserta penjelasannya.</li>
+    </ul>
+
+    <h2>Gambar Terkait:</h2>
+    <a href="/assets/images/html.jpg" target="_blank">
+      <img src="/assets/images/html.jpg" alt="Link HTML" class="image" />
+    </a>
+    <a href="/assets/images/list.jpg" target="_blank">
+      <img src="/assets/images/list.jpg" alt="List HTML" class="image" />
+    </a>
+  </section>
 
 </body>
 </html>
