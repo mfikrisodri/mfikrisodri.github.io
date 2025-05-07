@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-07T16:57:57+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Javascript</title><link href="http://localhost:4000/2025/04/25/javascript.html" rel="alternate" type="text/html" title="Javascript" /><published>2025-04-25T00:00:00+07:00</published><updated>2025-04-25T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/25/javascript</id><content type="html" xml:base="http://localhost:4000/2025/04/25/javascript.html"><![CDATA[<html lang="id">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-07T17:07:46+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Javascript</title><link href="http://localhost:4000/2025/04/25/javascript.html" rel="alternate" type="text/html" title="Javascript" /><published>2025-04-25T00:00:00+07:00</published><updated>2025-04-25T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/25/javascript</id><content type="html" xml:base="http://localhost:4000/2025/04/25/javascript.html"><![CDATA[<html lang="id">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -496,13 +496,6 @@
   </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav>
-    <a href="/">Home</a>
-    <a href="/friends.html">Friends</a>
-    <a href="/blog.html">Blog</a>
-  </nav>
 
   <!-- Header -->
   <header>
