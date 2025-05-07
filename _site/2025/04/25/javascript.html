@@ -18,33 +18,6 @@
             line-height: 1.6;
         }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 15px 0;
-            background-color: #0d1117;
-            box-shadow: 0 0 10px #00ffff33;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav a {
-            color: #00ffff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            padding: 8px 16px;
-            border-radius: 30px;
-            transition: background 0.3s, box-shadow 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #00ffff11;
-            box-shadow: 0 0 10px #00ffff;
-        }
-
         header {
             text-align: center;
             padding: 50px 20px 20px;
@@ -116,13 +89,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav>
-        <a href="/">Home</a>
-        <a href="/friends.html">Friends</a>
-        <a href="/blog.html">Blog</a>
-    </nav>
 
     <!-- Header -->
     <header>
