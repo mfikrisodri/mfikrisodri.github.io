@@ -1,140 +1,137 @@
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Sass dan SCSS</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d1117;
-      color: #e6f1ff;
-      line-height: 1.6;
-    }
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
-    header {
-      text-align: center;
-      padding: 50px 20px 20px;
-    }
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
 
-    header h1 {
-      font-size: 3rem;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff88;
-    }
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
 
-    .content {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #161b22;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00ffff33;
-    }
+  <!-- Plugins -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Sass dan SCSS</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Sass dan SCSS" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/2025/04/21/sass-dan-scss.html" />
+<meta property="og:url" content="http://localhost:4000/2025/04/21/sass-dan-scss.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-21T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Sass dan SCSS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-21T00:00:00+07:00","datePublished":"2025-04-21T00:00:00+07:00","headline":"Sass dan SCSS","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/21/sass-dan-scss.html"},"url":"http://localhost:4000/2025/04/21/sass-dan-scss.html"}</script>
+<!-- End Jekyll SEO tag -->
 
-    h2, h3, h4 {
-      color: #00ffff;
-      text-shadow: 0 0 5px #00ffffaa;
-    }
-
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.4em;
-      margin: 25px 0 10px;
-    }
-
-    h4 {
-      font-size: 1.2em;
-      margin: 20px 0 10px;
-    }
-
-    p {
-      font-size: 1.1em;
-      margin-bottom: 16px;
-      color: #c9d1d9;
-    }
-
-    ul, ol {
-      margin: 15px 0;
-      padding-left: 25px;
-    }
-
-    li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-      color: #e6f1ff;
-    }
-
-    strong {
-      color: #00ffff;
-    }
-
-    .image {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      margin: 25px auto;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #00ffff44;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/fikri.png" alt="Profile Picture" class="profile-picture">
+      <h1></h1>
+      <p></p>
+    </header>
 
+    <nav>
+      <ul>
+    
+      <li>
+        <a href="/" >
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/friends.html" >
+          Friends
+        </a>
+      </li>
+    
+      <li>
+        <a href="/blog.html" >
+          Blog
+        </a>
+      </li>
+    
+  </ul>
+    </nav>
 
-  <!-- Header -->
-  <header>
-    <h1>Sass dan SCSS</h1>
-  </header>
+    <main>
+      <h1>Sass dan SCSS</h1>
+<p class="post-date">21 Apr 2025</p>
+<div class="post-content">
+  <!-- ### Penjelasan Sass dan SCSS -->
 
-  <!-- Konten -->
-  <section class="content">
-    <h2>Penjelasan Sass dan SCSS</h2>
-    <p>
-      Sass (Syntactically Awesome Stylesheets) adalah <em>preprocessor</em> CSS yang membantu menulis kode CSS dengan lebih efisien, terstruktur, dan mudah dipelihara. Sass memungkinkan penggunaan fitur seperti variabel, <em>nesting</em>, <em>mixin</em>, dan lainnya—yang tidak tersedia di CSS biasa.
-    </p>
-    <p>
-      SCSS (Sassy CSS) adalah salah satu dari dua sintaks yang digunakan di Sass, dan bentuknya sangat mirip dengan CSS konvensional. Sintaks SCSS lebih umum digunakan karena kompatibel dengan file <code>.css</code>.
-    </p>
+<h3 id="penjelasan-sass-dan-scss">Penjelasan Sass dan SCSS</h3>
 
-    <h3>Perbedaan Sass dan SCSS</h3>
-    <ul>
-      <li><strong>Sass (Indentation syntax):</strong> Tidak menggunakan tanda kurung kurawal <code>{}</code> dan titik koma <code>;</code>, lebih mirip bahasa pemrograman Python. Ekstensi file: <code>.sass</code></li>
-      <li><strong>SCSS (Sassy CSS):</strong> Menggunakan tanda kurung kurawal dan titik koma seperti CSS biasa. Ekstensi file: <code>.scss</code></li>
-    </ul>
+<p>Sass (Syntactically Awesome Stylesheets) adalah preprocessor CSS yang membantu menulis kode CSS dengan lebih efisien, terstruktur, dan mudah dipelihara. Sass memungkinkan penggunaan fitur seperti variabel, nesting, mixin, dan lainnya—yang tidak tersedia di CSS biasa.</p>
 
-    <h3>Fungsi Utama Sass/SCSS</h3>
-    <ul>
-      <li><strong>Menggunakan Variabel:</strong> Dapat menyimpan nilai seperti warna, font, ukuran ke dalam variabel.</li>
-      <li><strong>Nesting (Penulisan Bersarang):</strong> Menulis selector di dalam selector lain seperti struktur HTML.</li>
-      <li><strong>Partials dan Import:</strong> Memecah file menjadi bagian-bagian kecil, lalu digabung kembali saat dikompilasi.</li>
-      <li><strong>Mixin dan Function:</strong> Menyimpan blok kode yang bisa digunakan ulang dengan parameter.</li>
-      <li><strong>Inheritance (Pewarisan):</strong> Menggunakan <code>@extend</code> untuk mewarisi properti dari selector lain.</li>
-      <li><strong>Operasi Matematika dan Logika:</strong> Mendukung perhitungan langsung di dalam CSS (misalnya <code>width: 100% / 3;</code>).</li>
-    </ul>
+<p>SCSS (Sassy CSS) adalah salah satu dari dua sintaks yang digunakan di Sass, dan bentuknya sangat mirip dengan CSS konvensional. Sintaks SCSS lebih umum digunakan karena kompatibel dengan file .css.</p>
 
-    <img src="/assets/images/sass-dan-scss.jpg" alt="Sass dan SCSS" class="image" />
-  </section>
+<hr />
 
+<h4 id="perbedaan-sass-dan-scss">Perbedaan Sass dan SCSS</h4>
+
+<ul>
+  <li>
+    <p><em>Sass (Indentation syntax)</em><br />
+Tidak menggunakan tanda kurung kurawal {} dan titik koma ;, lebih mirip bahasa pemrograman Python.<br />
+Ekstensi file: .sass</p>
+  </li>
+  <li>
+    <p><em>SCSS (Sassy CSS)</em><br />
+Menggunakan tanda kurung kurawal dan titik koma seperti CSS biasa.<br />
+Ekstensi file: .scss</p>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="fungsi-utama-sassscss">Fungsi Utama Sass/SCSS</h4>
+
+<ul>
+  <li>
+    <p><em>Menggunakan Variabel</em><br />
+ Dapat menyimpan nilai seperti warna, font, ukuran ke dalam variabel.</p>
+  </li>
+  <li>
+    <p><em>Nesting (Penulisan Bersarang)</em><br />
+ Menulis selector di dalam selector lain seperti struktur HTML.</p>
+  </li>
+  <li>
+    <p><em>Partials dan Import</em><br />
+ Memecah file menjadi bagian-bagian kecil, lalu digabung kembali saat dikompilasi.</p>
+  </li>
+  <li>
+    <p><em>Mixin dan Function</em><br />
+ Menyimpan blok kode yang bisa digunakan ulang dengan parameter.</p>
+  </li>
+  <li>
+    <p><em>Inheritance (Pewarisan)</em><br />
+ Menggunakan @extend untuk mewarisi properti dari selector lain.</p>
+  </li>
+  <li>
+    <p><em>Operasi Matematika dan Logika</em><br />
+ Mendukung perhitungan langsung di dalam CSS (misalnya width: 100% / 3;).</p>
+  </li>
+</ul>
+
+<p><img src="/assets/images/sass-dan-scss.jpg" alt="Sass dan SCSS" /></p>
+
+</div>
+
+    </main>
+
+    <footer>
+      &copy; 2025 . All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>

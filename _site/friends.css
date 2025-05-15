@@ -1,0 +1,79 @@
+/* Reset & Base */
+.friends-container *,
+.friends-container *::before,
+.friends-container *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0a0f1a;
+  color: #e0f7ff;
+  min-height: 100vh;
+}
+
+.friends-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #00aaff;
+  border-radius: 12px;
+  background-color: rgba(10, 15, 26, 0.95);
+  box-shadow: 0 0 25px #00aaff55;
+  color: #e0f7ff;
+  min-height: 100vh;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #00aaff;
+  border-radius: 12px;
+  background-color: rgba(10, 15, 26, 0.95);
+  box-shadow: 0 0 25px #00aaff55;
+}
+
+/* Main Title inside friends-container */
+.friends-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00bfff;
+  text-shadow: 0 0 10px #00bfff, 0 0 20px #0099ffaa;
+}
+
+/* Paragraph inside friends-container */
+.friends-container p {
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.8;
+  color: #b0dfff;
+}
+
+/* Friends List Styling */
+.friends-container .friends-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.friends-container .friends-list li {
+  margin-bottom: 8px;
+}
+
+.friends-container .friends-list a {
+  color: #00ccff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.friends-container .friends-list a:hover {
+  color: #3399ff;
+  text-shadow: 0 0 8px #3399ffaa;
+}

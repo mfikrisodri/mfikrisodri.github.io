@@ -1,128 +1,114 @@
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Markdown</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d1117;
-      color: #e6f1ff;
-      line-height: 1.6;
-    }
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
 
-    header {
-      text-align: center;
-      padding: 50px 20px 20px;
-    }
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
 
-    header h1 {
-      font-size: 3rem;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff88;
-    }
+  <!-- Plugins -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Markdown</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Markdown" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/2025/03/14/markdown.html" />
+<meta property="og:url" content="http://localhost:4000/2025/03/14/markdown.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-14T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Markdown" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-14T00:00:00+07:00","datePublished":"2025-03-14T00:00:00+07:00","headline":"Markdown","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/03/14/markdown.html"},"url":"http://localhost:4000/2025/03/14/markdown.html"}</script>
+<!-- End Jekyll SEO tag -->
 
-    .content {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #161b22;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00ffff33;
-    }
-
-    h2, h3 {
-      color: #00ffff;
-      text-shadow: 0 0 5px #00ffffaa;
-    }
-
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.4em;
-      margin: 25px 0 10px;
-    }
-
-    p {
-      font-size: 1.1em;
-      margin-bottom: 16px;
-      color: #c9d1d9;
-    }
-
-    ul, ol {
-      margin: 15px 0;
-      padding-left: 25px;
-    }
-
-    li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-      color: #e6f1ff;
-    }
-
-    strong {
-      color: #00ffff;
-    }
-
-    .image {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      margin: 25px auto;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #00ffff44;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/fikri.png" alt="Profile Picture" class="profile-picture">
+      <h1></h1>
+      <p></p>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <h1>Markdown</h1>
-  </header>
+    <nav>
+      <ul>
+    
+      <li>
+        <a href="/" >
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/friends.html" >
+          Friends
+        </a>
+      </li>
+    
+      <li>
+        <a href="/blog.html" >
+          Blog
+        </a>
+      </li>
+    
+  </ul>
+    </nav>
 
-  <!-- Konten -->
-  <section class="content">
-    <h2>Penjelasan Markdown</h2>
-    <p>
-      Markdown (MD) adalah bahasa markup ringan yang digunakan untuk memformat teks dengan cara yang sederhana dan mudah dibaca. Markdown memungkinkan penulisan teks terstruktur tanpa memerlukan alat pengolah kata yang rumit. Banyak digunakan untuk dokumentasi, blog, dan README file pada proyek perangkat lunak.
-    </p>
-    <p>
-      Markdown pertama kali diciptakan oleh <strong>John Gruber</strong> pada tahun 2004 untuk mempermudah penulisan dokumen yang dapat dipublikasikan secara online dengan format HTML.
-    </p>
+    <main>
+      <h1>Markdown</h1>
+<p class="post-date">14 Mar 2025</p>
+<div class="post-content">
+  <!-- ### Penjelasan Markdown -->
 
-    <h3>Fungsi Utama Markdown</h3>
-    <ol>
-      <li><strong>Format Teks yang Sederhana:</strong> Markdown memungkinkan penulis untuk memberikan struktur pada teks tanpa perlu menggunakan HTML atau alat pengolah kata kompleks.</li>
-      <li><strong>Mudah Dibaca:</strong> Teks yang diformat dengan Markdown tetap mudah dibaca, bahkan tanpa diproses. Ini membuatnya ideal untuk menulis dokumentasi atau blog.</li>
-      <li><strong>Konversi ke HTML:</strong> Markdown dapat dengan mudah dikonversi ke HTML menggunakan alat atau layanan tertentu, menjadikannya ideal untuk digunakan di platform blog dan situs web.</li>
-      <li><strong>Kompatibilitas dengan Sistem Kontrol Versi:</strong> Markdown sangat populer di kalangan pengembang karena mudah dibaca dan dikelola dalam sistem kontrol versi seperti Git.</li>
-      <li><strong>Penggunaan di Berbagai Platform:</strong> Markdown didukung oleh banyak platform seperti GitHub, Reddit, dan berbagai platform blog, memudahkan kolaborasi dan berbagi konten.</li>
-    </ol>
+<h3 id="penjelasan-markdown">Penjelasan Markdown</h3>
 
-    <img src="/assets/images/markdown.jpg" alt="Markdown" class="image" />
-  </section>
+<p>Markdown (MD) adalah bahasa markup ringan yang digunakan untuk memformat teks dengan cara yang sederhana dan mudah dibaca. Markdown memungkinkan penulisan teks terstruktur tanpa memerlukan alat pengolah kata yang rumit. Banyak digunakan untuk dokumentasi, blog, dan README file pada proyek perangkat lunak.</p>
 
+<p>Markdown pertama kali diciptakan oleh <em>John Gruber</em> pada tahun 2004 untuk mempermudah penulisan dokumen yang dapat dipublikasikan secara online dengan format HTML.</p>
+
+<h3 id="fungsi-utama-markdown">Fungsi Utama Markdown</h3>
+
+<ol>
+  <li>
+    <p><em>Format Teks yang Sederhana</em><br />
+Markdown memungkinkan penulis untuk memberikan struktur pada teks tanpa perlu menggunakan HTML atau alat pengolah kata kompleks.</p>
+  </li>
+  <li>
+    <p><em>Mudah Dibaca</em><br />
+Teks yang diformat dengan Markdown tetap mudah dibaca, bahkan tanpa diproses. Ini membuatnya ideal untuk menulis dokumentasi atau blog.</p>
+  </li>
+  <li>
+    <p><em>Konversi ke HTML</em><br />
+Markdown dapat dengan mudah dikonversi ke HTML menggunakan alat atau layanan tertentu, menjadikannya ideal untuk digunakan di platform blog dan situs web.</p>
+  </li>
+  <li>
+    <p><em>Kompatibilitas dengan Sistem Kontrol Versi</em><br />
+Markdown sangat populer di kalangan pengembang karena mudah dibaca dan dikelola dalam sistem kontrol versi seperti Git.</p>
+  </li>
+  <li>
+    <p><em>Penggunaan di Berbagai Platform</em><br />
+Markdown didukung oleh banyak platform seperti GitHub, Reddit, dan berbagai platform blog, memudahkan kolaborasi dan berbagi konten.</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/markdown.jpg" alt="Markdown" /></p>
+
+</div>
+
+    </main>
+
+    <footer>
+      &copy; 2025 . All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>

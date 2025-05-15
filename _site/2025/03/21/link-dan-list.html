@@ -1,141 +1,132 @@
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>HTML Link dan Lists</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d1117;
-      color: #e6f1ff;
-      line-height: 1.6;
-    }
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
 
-    header {
-      text-align: center;
-      padding: 100px 20px 20px; /* Tambahkan padding-top ekstra karena nav di-fixed */
-    }
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
 
-    header h1 {
-      font-size: 3rem;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff88;
-    }
+  <!-- Plugins -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HTML Link dan Lists</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="HTML Link dan Lists" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/2025/03/21/link-dan-list.html" />
+<meta property="og:url" content="http://localhost:4000/2025/03/21/link-dan-list.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-21T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HTML Link dan Lists" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-21T00:00:00+07:00","datePublished":"2025-03-21T00:00:00+07:00","headline":"HTML Link dan Lists","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/03/21/link-dan-list.html"},"url":"http://localhost:4000/2025/03/21/link-dan-list.html"}</script>
+<!-- End Jekyll SEO tag -->
 
-    .content {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #161b22;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00ffff33;
-    }
-
-    h2 {
-      color: #00ffff;
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      text-shadow: 0 0 5px #00ffffaa;
-    }
-
-    p {
-      font-size: 1.1em;
-      margin-bottom: 16px;
-      color: #c9d1d9;
-    }
-
-    ul, ol {
-      padding-left: 25px;
-      margin-bottom: 16px;
-    }
-
-    ul li, ol li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-      color: #e6f1ff;
-    }
-
-    strong {
-      color: #00ffff;
-    }
-
-    code {
-      background-color: #0d1117;
-      color: #00ffff;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: Consolas, monospace;
-    }
-
-    .image {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 10px;
-      margin: 25px auto;
-      display: block;
-      box-shadow: 0 0 10px #00ffff44;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/fikri.png" alt="Profile Picture" class="profile-picture">
+      <h1></h1>
+      <p></p>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <h1>HTML Link dan Lists</h1>
-  </header>
+    <nav>
+      <ul>
+    
+      <li>
+        <a href="/" >
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/friends.html" >
+          Friends
+        </a>
+      </li>
+    
+      <li>
+        <a href="/blog.html" >
+          Blog
+        </a>
+      </li>
+    
+  </ul>
+    </nav>
 
-  <!-- Konten -->
-  <section class="content">
-    <h2>Apa Itu HTML Link?</h2>
-    <p>HTML Link atau tautan adalah fitur yang digunakan untuk menghubungkan satu halaman web ke halaman lainnya atau ke sumber eksternal seperti gambar, dokumen, atau situs lain.</p>
+    <main>
+      <h1>HTML Link dan Lists</h1>
+<p class="post-date">21 Mar 2025</p>
+<div class="post-content">
+  <!-- ### Penjelasan HTML Link dan List -->
 
-    <h3>Kegunaan HTML Link:</h3>
-    <ul>
-      <li>Membuat navigasi antar halaman dalam satu situs web.</li>
-      <li>Mengarahkan pengguna ke halaman atau situs lain (eksternal).</li>
-      <li>Membuka file atau media tertentu seperti PDF, gambar, atau video.</li>
-      <li>Membuat tautan yang menjalankan fungsi tertentu, seperti mengirim email atau menelepon.</li>
-      <li>Membuat navigasi dalam satu halaman dengan anchor link (<code>#bagian</code>).</li>
-    </ul>
+<h3 id="apa-itu-html-link">Apa Itu HTML Link?</h3>
 
-    <h2>Apa Itu HTML Lists?</h2>
-    <p>HTML List digunakan untuk menampilkan data dalam bentuk daftar. Ini berguna untuk menyusun informasi secara terstruktur dan mudah dibaca.</p>
+<p>HTML Link atau tautan adalah fitur yang digunakan untuk menghubungkan satu halaman web ke halaman lainnya atau ke sumber eksternal seperti gambar, dokumen, atau situs lain.</p>
 
-    <h3>Jenis-jenis List dalam HTML:</h3>
-    <ul>
-      <li><strong>Unordered List (<code>&lt;ul&gt;</code>)</strong><br />Digunakan untuk daftar yang tidak membutuhkan urutan. Biasanya tampil dengan bullet (•).</li>
-      <li><strong>Ordered List (<code>&lt;ol&gt;</code>)</strong><br />Cocok untuk data yang memiliki urutan atau langkah-langkah tertentu. Tampil dengan angka (1, 2, 3, ...).</li>
-      <li><strong>Description List (<code>&lt;dl&gt;</code>)</strong><br />Digunakan untuk menampilkan daftar istilah beserta penjelasannya.</li>
-    </ul>
+<h4 id="kegunaan-html-link">Kegunaan HTML Link:</h4>
+<ul>
+  <li>Membuat navigasi antar halaman dalam satu situs web.</li>
+  <li>Mengarahkan pengguna ke halaman atau situs lain (eksternal).</li>
+  <li>Membuka file atau media tertentu seperti PDF, gambar, atau video.</li>
+  <li>Membuat tautan yang menjalankan fungsi tertentu, seperti mengirim email atau menelepon.</li>
+  <li>Membuat navigasi dalam satu halaman dengan anchor link (#bagian).</li>
+</ul>
 
-    <h2>Gambar Terkait:</h2>
-    <a href="/assets/images/html.jpg" target="_blank">
-      <img src="/assets/images/html.jpg" alt="Link HTML" class="image" />
-    </a>
-    <a href="/assets/images/list.jpg" target="_blank">
-      <img src="/assets/images/list.jpg" alt="List HTML" class="image" />
-    </a>
-  </section>
+<h3 id="apa-itu-html-lists">Apa Itu HTML Lists?</h3>
 
+<p>HTML List digunakan untuk menampilkan data dalam bentuk daftar. Ini berguna untuk menyusun informasi secara terstruktur dan mudah dibaca.</p>
+
+<h4 id="jenis-jenis-list-dalam-html">Jenis-jenis List dalam HTML:</h4>
+<ul>
+  <li>
+    <p><strong>Unordered List (&lt;ul&gt;)</strong><br />
+ Digunakan untuk daftar yang tidak membutuhkan urutan. Biasanya tampil dengan bullet (•).<br />
+ Contoh: daftar fitur, menu navigasi.</p>
+  </li>
+  <li>
+    <p><strong>Ordered List (&lt;ol&gt;)</strong><br />
+ Cocok untuk data yang memiliki urutan atau langkah-langkah tertentu. Tampil dengan angka (1, 2, 3, …).<br />
+ Contoh: panduan, prosedur kerja, langkah tutorial.</p>
+  </li>
+  <li>
+    <p><strong>Description List (&lt;dl&gt;)</strong><br />
+ Digunakan untuk menampilkan daftar istilah beserta penjelasannya.<br />
+ Contoh: daftar istilah, keterangan spesifikasi.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="gambar-terkait">Gambar Terkait:</h3>
+
+<ul>
+  <li>
+    <p><a href="/assets/images/html.jpg">Klik untuk melihat gambar Link HTML</a><br />
+<img src="/assets/images/html.jpg" alt="Link HTML" /></p>
+  </li>
+  <li>
+    <p><a href="/assets/images/list.jpg">Klik untuk melihat gambar List HTML</a><br />
+<img src="/assets/images/list.jpg" alt="List HTML" /></p>
+  </li>
+</ul>
+
+</div>
+
+    </main>
+
+    <footer>
+      &copy; 2025 . All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
-

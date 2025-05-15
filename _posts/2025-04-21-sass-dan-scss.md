@@ -1,140 +1,47 @@
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sass dan SCSS</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+---
+layout: post
+title: "Sass dan SCSS"
+---
+<!-- ### Penjelasan Sass dan SCSS -->
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d1117;
-      color: #e6f1ff;
-      line-height: 1.6;
-    }
+### Penjelasan Sass dan SCSS
 
-    header {
-      text-align: center;
-      padding: 50px 20px 20px;
-    }
+Sass (Syntactically Awesome Stylesheets) adalah preprocessor CSS yang membantu menulis kode CSS dengan lebih efisien, terstruktur, dan mudah dipelihara. Sass memungkinkan penggunaan fitur seperti variabel, nesting, mixin, dan lainnya—yang tidak tersedia di CSS biasa.
 
-    header h1 {
-      font-size: 3rem;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff88;
-    }
+SCSS (Sassy CSS) adalah salah satu dari dua sintaks yang digunakan di Sass, dan bentuknya sangat mirip dengan CSS konvensional. Sintaks SCSS lebih umum digunakan karena kompatibel dengan file .css.
 
-    .content {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #161b22;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00ffff33;
-    }
+---
 
-    h2, h3, h4 {
-      color: #00ffff;
-      text-shadow: 0 0 5px #00ffffaa;
-    }
+#### Perbedaan Sass dan SCSS
 
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-    }
+- *Sass (Indentation syntax)*  
+  Tidak menggunakan tanda kurung kurawal {} dan titik koma ;, lebih mirip bahasa pemrograman Python.  
+  Ekstensi file: .sass
 
-    h3 {
-      font-size: 1.4em;
-      margin: 25px 0 10px;
-    }
+- *SCSS (Sassy CSS)*  
+  Menggunakan tanda kurung kurawal dan titik koma seperti CSS biasa.  
+  Ekstensi file: .scss
 
-    h4 {
-      font-size: 1.2em;
-      margin: 20px 0 10px;
-    }
+---
 
-    p {
-      font-size: 1.1em;
-      margin-bottom: 16px;
-      color: #c9d1d9;
-    }
+#### Fungsi Utama Sass/SCSS
 
-    ul, ol {
-      margin: 15px 0;
-      padding-left: 25px;
-    }
+- *Menggunakan Variabel*  
+   Dapat menyimpan nilai seperti warna, font, ukuran ke dalam variabel.
 
-    li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-      color: #e6f1ff;
-    }
+- *Nesting (Penulisan Bersarang)*  
+   Menulis selector di dalam selector lain seperti struktur HTML.
 
-    strong {
-      color: #00ffff;
-    }
+- *Partials dan Import*  
+   Memecah file menjadi bagian-bagian kecil, lalu digabung kembali saat dikompilasi.
 
-    .image {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      margin: 25px auto;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #00ffff44;
-    }
+- *Mixin dan Function*  
+   Menyimpan blok kode yang bisa digunakan ulang dengan parameter.
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
+- *Inheritance (Pewarisan)*  
+   Menggunakan @extend untuk mewarisi properti dari selector lain.
 
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
-</head>
-<body>
+- *Operasi Matematika dan Logika*  
+   Mendukung perhitungan langsung di dalam CSS (misalnya width: 100% / 3;).
 
-
-  <!-- Header -->
-  <header>
-    <h1>Sass dan SCSS</h1>
-  </header>
-
-  <!-- Konten -->
-  <section class="content">
-    <h2>Penjelasan Sass dan SCSS</h2>
-    <p>
-      Sass (Syntactically Awesome Stylesheets) adalah <em>preprocessor</em> CSS yang membantu menulis kode CSS dengan lebih efisien, terstruktur, dan mudah dipelihara. Sass memungkinkan penggunaan fitur seperti variabel, <em>nesting</em>, <em>mixin</em>, dan lainnya—yang tidak tersedia di CSS biasa.
-    </p>
-    <p>
-      SCSS (Sassy CSS) adalah salah satu dari dua sintaks yang digunakan di Sass, dan bentuknya sangat mirip dengan CSS konvensional. Sintaks SCSS lebih umum digunakan karena kompatibel dengan file <code>.css</code>.
-    </p>
-
-    <h3>Perbedaan Sass dan SCSS</h3>
-    <ul>
-      <li><strong>Sass (Indentation syntax):</strong> Tidak menggunakan tanda kurung kurawal <code>{}</code> dan titik koma <code>;</code>, lebih mirip bahasa pemrograman Python. Ekstensi file: <code>.sass</code></li>
-      <li><strong>SCSS (Sassy CSS):</strong> Menggunakan tanda kurung kurawal dan titik koma seperti CSS biasa. Ekstensi file: <code>.scss</code></li>
-    </ul>
-
-    <h3>Fungsi Utama Sass/SCSS</h3>
-    <ul>
-      <li><strong>Menggunakan Variabel:</strong> Dapat menyimpan nilai seperti warna, font, ukuran ke dalam variabel.</li>
-      <li><strong>Nesting (Penulisan Bersarang):</strong> Menulis selector di dalam selector lain seperti struktur HTML.</li>
-      <li><strong>Partials dan Import:</strong> Memecah file menjadi bagian-bagian kecil, lalu digabung kembali saat dikompilasi.</li>
-      <li><strong>Mixin dan Function:</strong> Menyimpan blok kode yang bisa digunakan ulang dengan parameter.</li>
-      <li><strong>Inheritance (Pewarisan):</strong> Menggunakan <code>@extend</code> untuk mewarisi properti dari selector lain.</li>
-      <li><strong>Operasi Matematika dan Logika:</strong> Mendukung perhitungan langsung di dalam CSS (misalnya <code>width: 100% / 3;</code>).</li>
-    </ul>
-
-    <img src="/assets/images/sass-dan-scss.jpg" alt="Sass dan SCSS" class="image">
-  </section>
-
-</body>
-</html>
+![Sass dan SCSS](/assets/images/sass-dan-scss.jpg)

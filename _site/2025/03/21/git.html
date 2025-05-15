@@ -1,128 +1,118 @@
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Git</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d1117;
-      color: #e6f1ff;
-      line-height: 1.6;
-    }
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
-    header {
-      text-align: center;
-      padding: 50px 20px 20px;
-    }
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
 
-    header h1 {
-      font-size: 3rem;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff88;
-    }
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
 
-    .content {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #161b22;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00ffff33;
-    }
+  <!-- Plugins -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Git</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Git" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/2025/03/21/git.html" />
+<meta property="og:url" content="http://localhost:4000/2025/03/21/git.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-21T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Git" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-21T00:00:00+07:00","datePublished":"2025-03-21T00:00:00+07:00","headline":"Git","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/03/21/git.html"},"url":"http://localhost:4000/2025/03/21/git.html"}</script>
+<!-- End Jekyll SEO tag -->
 
-    h2, h3 {
-      color: #00ffff;
-      text-shadow: 0 0 5px #00ffffaa;
-    }
-
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.4em;
-      margin: 25px 0 10px;
-    }
-
-    p {
-      font-size: 1.1em;
-      margin-bottom: 16px;
-      color: #c9d1d9;
-    }
-
-    ul {
-      margin: 15px 0;
-      padding-left: 25px;
-    }
-
-    ul li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-      color: #e6f1ff;
-    }
-
-    strong {
-      color: #00ffff;
-    }
-
-    .image {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      margin: 25px auto;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #00ffff44;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/fikri.png" alt="Profile Picture" class="profile-picture">
+      <h1></h1>
+      <p></p>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <h1>Git</h1>
-  </header>
+    <nav>
+      <ul>
+    
+      <li>
+        <a href="/" >
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/friends.html" >
+          Friends
+        </a>
+      </li>
+    
+      <li>
+        <a href="/blog.html" >
+          Blog
+        </a>
+      </li>
+    
+  </ul>
+    </nav>
 
-  <!-- Konten -->
-  <section class="content">
-    <h2>Penjelasan Git</h2>
-    <p>
-      Git adalah sistem kontrol versi (<em>version control system</em>) yang digunakan untuk mencatat perubahan pada file dan mengelola proyek pengembangan perangkat lunak secara kolaboratif. Git sangat populer di kalangan developer karena kecepatan, fleksibilitas, dan kemampuannya untuk bekerja secara terdistribusi.
-    </p>
-    <p>
-      Git diciptakan oleh <strong>Linus Torvalds</strong> (pencipta Linux) pada tahun 2005 untuk mengelola pengembangan kernel Linux.
-    </p>
+    <main>
+      <h1>Git</h1>
+<p class="post-date">21 Mar 2025</p>
+<div class="post-content">
+  <!-- ### Penjelasan Git -->
 
-    <h3>Fungsi Utama Git</h3>
-    <ul>
-      <li><strong>Mencatat Riwayat Perubahan:</strong> Git menyimpan semua versi file, memungkinkan kita untuk menelusuri perubahan dari waktu ke waktu.</li>
-      <li><strong>Kolaborasi Tim:</strong> Banyak pengembang bisa bekerja di proyek yang sama tanpa saling menimpa perubahan.</li>
-      <li><strong>Branching dan Merging:</strong> Memungkinkan pembuatan <em>branch</em> untuk fitur baru, lalu digabung kembali ke branch utama setelah selesai.</li>
-      <li><strong>Manajemen Versi Lokal dan Remote:</strong> Bisa bekerja secara lokal tanpa koneksi internet, dan disinkronkan ke remote repository seperti GitHub, GitLab, atau Bitbucket.</li>
-      <li><strong>Pemulihan File dan Revisi:</strong> Dapat membatalkan perubahan atau mengembalikan proyek ke versi sebelumnya.</li>
-      <li><strong>Audit dan Akuntabilitas:</strong> Setiap commit mencatat siapa yang membuat perubahan dan kapan, berguna untuk audit dan pelacakan.</li>
-    </ul>
+<h3 id="penjelasan-git">Penjelasan Git</h3>
 
-    <img src="/assets/images/git.jpg" alt="Git" class="image" />
-  </section>
+<p>Git adalah sistem kontrol versi (version control system) yang digunakan untuk mencatat perubahan pada file dan mengelola proyek pengembangan perangkat lunak secara kolaboratif. Git sangat populer di kalangan developer karena kecepatan, fleksibilitas, dan kemampuannya untuk bekerja secara terdistribusi.</p>
 
+<p>Git diciptakan oleh <em>Linus Torvalds</em> (pencipta Linux) pada tahun 2005 untuk mengelola pengembangan kernel Linux.</p>
+
+<h4 id="fungsi-utama-git">Fungsi Utama Git</h4>
+
+<ul>
+  <li>
+    <p><em>Mencatat Riwayat Perubahan</em><br />
+ Git menyimpan semua versi file, memungkinkan kita untuk menelusuri perubahan dari waktu ke waktu.</p>
+  </li>
+  <li>
+    <p><em>Kolaborasi Tim</em><br />
+ Banyak pengembang bisa bekerja di proyek yang sama tanpa saling menimpa perubahan.</p>
+  </li>
+  <li>
+    <p><em>Branching dan Merging</em><br />
+ Memungkinkan pembuatan branch untuk fitur baru, lalu digabung kembali ke branch utama setelah selesai.</p>
+  </li>
+  <li>
+    <p><em>Manajemen Versi Lokal dan Remote</em><br />
+ Bisa bekerja secara lokal tanpa koneksi internet, dan disinkronkan ke remote repository seperti GitHub, GitLab, atau Bitbucket.</p>
+  </li>
+  <li>
+    <p><em>Pemulihan File dan Revisi</em><br />
+ Dapat membatalkan perubahan atau mengembalikan proyek ke versi sebelumnya.</p>
+  </li>
+  <li>
+    <p><em>Audit dan Akuntabilitas</em><br />
+ Setiap commit mencatat siapa yang membuat perubahan dan kapan, berguna untuk audit dan pelacakan.</p>
+  </li>
+</ul>
+
+<p><img src="/assets/images/git.jpg" alt="Git" /></p>
+
+</div>
+
+    </main>
+
+    <footer>
+      &copy; 2025 . All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>

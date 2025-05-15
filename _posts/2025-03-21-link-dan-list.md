@@ -1,141 +1,44 @@
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HTML Link dan Lists</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+---
+layout: post
+title: "HTML Link dan Lists"
+---
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0d1117;
-      color: #e6f1ff;
-      line-height: 1.6;
-    }
+<!-- ### Penjelasan HTML Link dan List -->
 
+### Apa Itu HTML Link?
 
-    header {
-      text-align: center;
-      padding: 100px 20px 20px; /* Tambahkan padding-top ekstra karena nav di-fixed */
-    }
+HTML Link atau tautan adalah fitur yang digunakan untuk menghubungkan satu halaman web ke halaman lainnya atau ke sumber eksternal seperti gambar, dokumen, atau situs lain.
 
-    header h1 {
-      font-size: 3rem;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff88;
-    }
+#### Kegunaan HTML Link:
+- Membuat navigasi antar halaman dalam satu situs web.
+- Mengarahkan pengguna ke halaman atau situs lain (eksternal).
+- Membuka file atau media tertentu seperti PDF, gambar, atau video.
+- Membuat tautan yang menjalankan fungsi tertentu, seperti mengirim email atau menelepon.
+- Membuat navigasi dalam satu halaman dengan anchor link (#bagian).
 
-    .content {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #161b22;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00ffff33;
-    }
+### Apa Itu HTML Lists?
 
-    h2 {
-      color: #00ffff;
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      text-shadow: 0 0 5px #00ffffaa;
-    }
+HTML List digunakan untuk menampilkan data dalam bentuk daftar. Ini berguna untuk menyusun informasi secara terstruktur dan mudah dibaca.
 
-    p {
-      font-size: 1.1em;
-      margin-bottom: 16px;
-      color: #c9d1d9;
-    }
+#### Jenis-jenis List dalam HTML:
+- **Unordered List (<ul>)**  
+   Digunakan untuk daftar yang tidak membutuhkan urutan. Biasanya tampil dengan bullet (•).  
+   Contoh: daftar fitur, menu navigasi.
 
-    ul, ol {
-      padding-left: 25px;
-      margin-bottom: 16px;
-    }
+- **Ordered List (<ol>)**  
+   Cocok untuk data yang memiliki urutan atau langkah-langkah tertentu. Tampil dengan angka (1, 2, 3, ...).  
+   Contoh: panduan, prosedur kerja, langkah tutorial.
 
-    ul li, ol li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-      color: #e6f1ff;
-    }
+- **Description List (<dl>)**  
+   Digunakan untuk menampilkan daftar istilah beserta penjelasannya.  
+   Contoh: daftar istilah, keterangan spesifikasi.
 
-    strong {
-      color: #00ffff;
-    }
+---
 
-    code {
-      background-color: #0d1117;
-      color: #00ffff;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: Consolas, monospace;
-    }
+### Gambar Terkait:
 
-    .image {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 10px;
-      margin: 25px auto;
-      display: block;
-      box-shadow: 0 0 10px #00ffff44;
-    }
+- [Klik untuk melihat gambar Link HTML](/assets/images/html.jpg)  
+  ![Link HTML](/assets/images/html.jpg)
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <h1>HTML Link dan Lists</h1>
-  </header>
-
-  <!-- Konten -->
-  <section class="content">
-    <h2>Apa Itu HTML Link?</h2>
-    <p>HTML Link atau tautan adalah fitur yang digunakan untuk menghubungkan satu halaman web ke halaman lainnya atau ke sumber eksternal seperti gambar, dokumen, atau situs lain.</p>
-
-    <h3>Kegunaan HTML Link:</h3>
-    <ul>
-      <li>Membuat navigasi antar halaman dalam satu situs web.</li>
-      <li>Mengarahkan pengguna ke halaman atau situs lain (eksternal).</li>
-      <li>Membuka file atau media tertentu seperti PDF, gambar, atau video.</li>
-      <li>Membuat tautan yang menjalankan fungsi tertentu, seperti mengirim email atau menelepon.</li>
-      <li>Membuat navigasi dalam satu halaman dengan anchor link (<code>#bagian</code>).</li>
-    </ul>
-
-    <h2>Apa Itu HTML Lists?</h2>
-    <p>HTML List digunakan untuk menampilkan data dalam bentuk daftar. Ini berguna untuk menyusun informasi secara terstruktur dan mudah dibaca.</p>
-
-    <h3>Jenis-jenis List dalam HTML:</h3>
-    <ul>
-      <li><strong>Unordered List (<code>&lt;ul&gt;</code>)</strong><br>Digunakan untuk daftar yang tidak membutuhkan urutan. Biasanya tampil dengan bullet (•).</li>
-      <li><strong>Ordered List (<code>&lt;ol&gt;</code>)</strong><br>Cocok untuk data yang memiliki urutan atau langkah-langkah tertentu. Tampil dengan angka (1, 2, 3, ...).</li>
-      <li><strong>Description List (<code>&lt;dl&gt;</code>)</strong><br>Digunakan untuk menampilkan daftar istilah beserta penjelasannya.</li>
-    </ul>
-
-    <h2>Gambar Terkait:</h2>
-    <a href="/assets/images/html.jpg" target="_blank">
-      <img src="/assets/images/html.jpg" alt="Link HTML" class="image">
-    </a>
-    <a href="/assets/images/list.jpg" target="_blank">
-      <img src="/assets/images/list.jpg" alt="List HTML" class="image">
-    </a>
-  </section>
-
-</body>
-</html>
-
+- [Klik untuk melihat gambar List HTML](/assets/images/list.jpg)  
+  ![List HTML](/assets/images/list.jpg)
