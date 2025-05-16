@@ -1,6 +1,18 @@
-url : "https://mfikrisodri.github.io"
+title: M Fikri Sodri
+email: mhdfikri270106@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A personal blog by M. Fikri Sodri, a student at Politeknik Negeri Lhokseumawe.
+  He is from Aceh Tamiang and was born on January 27, 2006.
+  He is currently studying in the Department of Information and Computer Technology,
+  majoring in Informatics Engineering. This blog is built using Jekyll and hosted
+  on GitHub Pages. The content is primarily in Indonesian, but some posts may be in English.
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mfikrisodri.github.io" # the base hostname & protocol for your site
+github_username: mfikrisodri
+
+collections:
+  students:
+    output: true
+    permalink: /students/:name/
+    title: Students
