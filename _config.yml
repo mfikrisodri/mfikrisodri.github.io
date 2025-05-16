@@ -16,3 +16,8 @@ collections:
     output: true
     permalink: /students/:name/
     title: Students
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
