@@ -6,18 +6,14 @@ description: > # this means to ignore newlines until "baseurl:"
   He is currently studying in the Department of Information and Computer Technology,
   majoring in Informatics Engineering. This blog is built using Jekyll and hosted
   on GitHub Pages. The content is primarily in Indonesian, but some posts may be in English.
-
 baseurl: "" # the subpath of your site, e.g. /blog
+
 url: "https://mfikrisodri.github.io" # the base hostname & protocol for your site
 github_username: mfikrisodri
 
 collections:
   students:
     output: true
-    permalink: /students/:name/
+    permalink: /students/:name
     title: Students
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
