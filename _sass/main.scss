@@ -1,5 +1,5 @@
-$primary-color: #092ed0;
-$secondary-color: #fbcb05;
+$primary-color: #040b28;
+$secondary-color: #0599fb;
 $font-stack: Helvetica, sans-serif;
 
 body,
@@ -10,7 +10,7 @@ h2 {
 
 body {
   font-family: $font-stack; line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #041938;
 }
 
 header {
@@ -21,7 +21,7 @@ header {
 main {
   padding: 24px; margin-top: 24px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #b4def9;
 }
 
 footer {

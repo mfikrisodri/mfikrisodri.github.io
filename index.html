@@ -3,31 +3,118 @@ layout: default
 title: home
 ---
 
-<link rel="stylesheet" href="index-style.css">
+<style>
+  body {
+    background-color: #0a0f1a;
+    color: #66ccff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .container {
+    width: 80%;
+    margin: 24px auto;
+    background-color: #121b2e;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow:
+      0 0 15px #00bfff,
+      inset 0 0 15px #66ccff;
+  }
+
+  h1 {
+    color: #00bfff;
+    margin-bottom: 16px;
+    text-shadow: 0 0 12px #00bfff;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+    padding-bottom: 6px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+    color: #66ccff;
+  }
+
+  table tr:nth-child(even) {
+    background-color: rgba(102, 204, 255, 0.1);
+  }
+
+  table tr:hover {
+    background-color: rgba(0, 191, 255, 0.2);
+  }
+
+  table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(102, 204, 255, 0.3);
+  }
+
+  table td:first-child {
+    font-weight: 600;
+    width: 35%;
+    color: #00bfff;
+  }
+
+  button {
+    display: block;
+    margin: 30px auto;
+    background-color: #00bfff;
+    color: #0a0f1a;
+    border: none;
+    padding: 14px 28px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:
+      0 0 10px #00bfff,
+      0 0 20px #66ccff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #66ccff;
+    box-shadow:
+      0 0 20px #00bfff,
+      0 0 40px #66ccff;
+  }
+</style>
 
 <div class="container">
-    <h1>About : M Fikri Sodri</h1>
-    <p>
-        Sejak kecil, Fikri telah menunjukkan semangat belajar yang tinggi. Perjalanan pendidikannya dimulai di SDN Suka Jadi, kemudian berlanjut ke SMPN 4 Bendahara, dan ia menamatkan pendidikan menengah di SMAN 1 Karang Baru.
-        Saat ini, Fikri sedang menempuh pendidikan program D4 di Politeknik Negeri Lhokseumawe, jurusan Teknik Informatika.
-        Dalam kesehariannya, Fikri dikenal sebagai pribadi yang aktif dan energik. Ia sangat menyukai berbagai aktivitas olahraga seperti sepak bola, voli, dan badminton, yang membantunya menjaga keseimbangan antara akademik dan aktivitas fisik.
-        Untuk mendukung energi dan semangatnya, Fikri memiliki makanan dan minuman favorit nasi goreng dan jus mangga, dua hidangan yang selalu menjadi pilihannya untuk mengisi kembali tenaga setelah beraktivitas.
-    </p>
+  <h1>About : M Fikri Sodri</h1>
+  <p>
+    Sejak kecil, Fikri telah menunjukkan semangat belajar yang tinggi. Ia memulai jenjang pendidikannya di SDN Suka Jadi, kemudian melanjutkan ke SMPN 4 Bendahara, dan menyelesaikan pendidikan menengah di SMAN 1 Karang Baru.Saat ini, Fikri sedang menempuh program Diploma IV di Politeknik Negeri Lhokseumawe, dengan jurusan Teknik Informatika.
+    Dalam kesehariannya, Fikri dikenal sebagai pribadi yang aktif, energik, dan memiliki semangat tinggi dalam menjalani berbagai aktivitas. Ia sangat gemar berolahraga, khususnya sepak bola, voli, dan bulu tangkis — kegiatan yang membantunya menjaga keseimbangan antara akademik dan fisik.Untuk menjaga energi dan semangatnya, Fikri memiliki makanan dan minuman favorit: nasi goreng dan jus mangga. Dua hidangan ini selalu menjadi pilihan utamanya untuk memulihkan tenaga setelah beraktivitas.
+  </p>
 </div>
 
 <div class="container">
-    <div class="section-title">Personal Data</div>
-    <table>
-        <tr><td>Nama</td><td>: M Fikri Sodri</td></tr>
-        <tr><td>Tempat, Tanggal Lahir</td><td>: Suka Jadi, 27 Januari 2006</td></tr>
-        <tr><td>Gol Darah</td><td>: - </td></tr>
-        <tr><td>Agama</td><td>: Islam</td></tr>
-        <tr><td>Status</td><td>: Single</td></tr>
-        <tr><td>Alamat</td><td>: Dusun Suka Jadi, Desa Paya Raja, Kec. Banda Mulia, Kab. Aceh Tamiang, Prov. Aceh</td></tr>
-        <tr><td>Pekerjaan</td><td>: Mahasiswa</td></tr>
-        <tr><td>Kewarganegaraan</td><td>: Indonesia</td></tr>
-        <tr><td>Tinggi, Berat Badan</td><td>: 170 cm, 71 kg</td></tr>
-    </table>
+  <div class="section-title">Personal Data</div>
+  <table>
+    <tr><td>Nama</td><td>: M Fikri Sodri</td></tr>
+    <tr><td>Tempat, Tanggal Lahir</td><td>: Suka Jadi, 27 Januari 2006</td></tr>
+    <tr><td>Gol Darah</td><td>: - </td></tr>
+    <tr><td>Agama</td><td>: Islam</td></tr>
+    <tr><td>Status</td><td>: Single</td></tr>
+    <tr><td>Alamat</td><td>: Dusun Suka Jadi, Desa Paya Raja, Kec. Banda Mulia, Kab. Aceh Tamiang, Prov. Aceh</td></tr>
+    <tr><td>Pekerjaan</td><td>: Mahasiswa</td></tr>
+    <tr><td>Kewarganegaraan</td><td>: Indonesia</td></tr>
+    <tr><td>Tinggi, Berat Badan</td><td>: 170 cm, 71 kg</td></tr>
+  </table>
 </div>
 
-      <button onclick="myFunction()">Jangan diklik ya!</button>
+<button onclick="myFunction()">Jangan diklik ya!</button>
+
+

@@ -1,79 +1,65 @@
-/* Reset & Base */
-.friends-container *,
-.friends-container *::before,
-.friends-container *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 body {
-  background-color: #0a0f1a;
-  color: #e0f7ff;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #0d111b;
+  color: #cfefff;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.8;
+  background-image: radial-gradient(circle at top left, #071a2f, #0d111b);
 }
 
 .friends-container {
-  width: 95%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 2px solid #00aaff;
-  border-radius: 12px;
-  background-color: rgba(10, 15, 26, 0.95);
-  box-shadow: 0 0 25px #00aaff55;
-  color: #e0f7ff;
-  min-height: 100vh;
+  width: 90%;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(0, 245, 255, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  transition: 0.4s ease;
 }
 
-.container {
-  width: 95%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 2px solid #00aaff;
-  border-radius: 12px;
-  background-color: rgba(10, 15, 26, 0.95);
-  box-shadow: 0 0 25px #00aaff55;
+.friends-container:hover {
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.8);
+  transform: translateY(-6px);
 }
 
-/* Main Title inside friends-container */
 .friends-container h1 {
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 2.8rem;
   margin-bottom: 20px;
-  color: #00bfff;
-  text-shadow: 0 0 10px #00bfff, 0 0 20px #0099ffaa;
+  color: #00e5ff;
+  text-shadow: 0 0 6px #00e5ff99;
 }
 
-/* Paragraph inside friends-container */
 .friends-container p {
   font-size: 1.1rem;
-  text-align: justify;
-  line-height: 1.8;
-  color: #b0dfff;
+  color: #b6eaff;
+  margin-bottom: 24px;
 }
 
-/* Friends List Styling */
-.friends-container .friends-list {
+.friends-list {
   list-style-type: decimal;
   padding-left: 20px;
-  margin-top: 10px;
+  color: #e8faff;
+  font-size: 1.1rem;
 }
 
-.friends-container .friends-list li {
-  margin-bottom: 8px;
+.friends-list li {
+  margin-bottom: 12px;
 }
 
-.friends-container .friends-list a {
-  color: #00ccff;
+.friends-list li a {
+  color: #00f0ff;
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 4px #00b8ff88;
 }
 
-.friends-container .friends-list a:hover {
-  color: #3399ff;
-  text-shadow: 0 0 8px #3399ffaa;
+.friends-list li a:hover {
+  color: #66fcff;
+  text-shadow: 0 0 10px #00f0ff;
 }
